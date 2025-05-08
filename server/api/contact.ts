@@ -1,6 +1,6 @@
 // Vercel Serverless Function for /api/contact
 // Required environment variables: MONGODB_URI, GMAIL_USER, GMAIL_PASS, GMAIL_RECEIVER
-import { contactSchema } from "@shared/schema";
+import { contactSchema } from "../../shared/schema";
 import mongoose from "mongoose";
 import nodemailer from "nodemailer";
 import type { VercelRequest, VercelResponse } from '@vercel/node';
