@@ -2,8 +2,12 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { contactSchema } from "@shared/schema";
+import cors from "cors";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Handle preflight OPTIONS for /api/contact
+  app.options("/api/contact", cors());
+
   // Contact form endpoint
   app.post("/api/contact", async (req, res) => {
     try {
