@@ -3,9 +3,13 @@ services:
     name: portfolio
     env: node
     buildCommand: |
+      # Install all dependencies including dev dependencies
       npm install
-      npm install --production=false
+      # Install Vite and React plugin explicitly
+      npm install vite @vitejs/plugin-react @replit/vite-plugin-runtime-error-modal @replit/vite-plugin-cartographer --save-dev
+      # Build the application
       npm run build
+      # Install server dependencies
       cd server && npm install
     startCommand: cd dist && node index.js
     envVars:
