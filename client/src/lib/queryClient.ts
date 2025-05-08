@@ -12,7 +12,10 @@ export async function apiRequest(
   url: string,
   data?: unknown | undefined,
 ): Promise<Response> {
-  const res = await fetch(url, {
+  // Prepend Vercel backend URL if url is relative
+  const baseUrl = "https://portfolio-six-hazel-87.vercel.app";
+  const fullUrl = url.startsWith("http") ? url : baseUrl + url;
+  const res = await fetch(fullUrl, {
     method,
     headers: data ? { "Content-Type": "application/json" } : {},
     body: data ? JSON.stringify(data) : undefined,
