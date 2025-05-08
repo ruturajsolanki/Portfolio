@@ -1,0 +1,59 @@
+DEVELOPER PORTFOLIO WITH PARALLAX SCROLL, MINIMAL & CREATIVE UI
+Build a modern, minimal yet uniquely creative developer portfolio website using React (Next.js preferred) and Tailwind CSS (or styled-components). The site must use a parallax scrolling effect, where each scroll transitions smoothly to a new full-screen section, with seamless, inertia-based motion and subtle but clever animations.
+
+🔧 Core Design & Aesthetic
+Visual Style: Minimalistic layout with lots of white/negative space, but enhanced by subtle creative flair — such as asymmetric grid layouts, layered elements, floating text, or animated typography.
+
+Colors: Use a soft, neutral base (white, charcoal, or off-black) with 1–2 carefully chosen accent colors (like electric blue or muted coral). Add dark mode support with a toggle.
+
+Typography: Bold display font for section headers, clean sans-serif for body text. Preferably use a variable font for expressive transitions.
+
+Microinteractions: Use hover states, animated underlines, magnetic buttons, and scroll-triggered fades/slides.
+
+🌀 Scroll & Parallax Effects
+Implement scroll snapping to lock into each section with smooth transitions.
+
+Add parallax layers: foreground elements (text, buttons) scroll at normal speed, background elements scroll slower or move subtly in response to scroll.
+
+Use GSAP + ScrollTrigger (or Framer Motion if using React) to manage animations.
+
+Optional: Add a custom cursor or animated scroll indicator to guide interaction.
+
+📄 Sections (Each is Fullscreen & Scrollable)
+Hero – Name, short tagline (e.g., “Creative Frontend Developer”), a background video or interactive canvas, CTA button ("View My Work").
+
+About Me – Short personal intro, circular image or SVG avatar, 3 unique fact-bubbles or an animated traits list.
+
+Projects – Interactive grid or carousel. Each project opens a modal with animated details. Hover effects: color shifts, subtle zoom, or morphing shapes.
+
+Tech Stack – Animated icons that pop into view, grouped by Frontend, Backend, Tools.
+
+Timeline – Creative visual resume (could use vertical or horizontal scroll). Animate in entries as the user scrolls.
+
+Contact – Simple contact form, social links, CV download. Optional: Include an animated map or abstract illustration here.
+
+🧠 Creative Additions (Optional but Recommended)
+Background Elements: Subtle animated SVGs, 3D blobs, or WebGL effects (Three.js) that react to scroll or cursor.
+
+Floating Particles: Tie them to scroll speed or cursor direction.
+
+Cursor Trail / Magnetic Buttons: Add delight to interaction without cluttering the UI.
+
+Custom Section Transitions: Think swipe-reveal effects or morphing SVG masks between sections.
+
+Easter Eggs: Hide a small interactive mini-project or a fun command-line interface section.
+
+📱 Performance & Tech
+Framework: Next.js (for performance and SEO)
+
+Styling: Tailwind CSS or styled-components
+
+Animation: GSAP, Framer Motion, or Locomotive Scroll
+
+Hosting: Vercel or Netlify
+
+Lighthouse score: Optimize for 90+ performance
+
+Accessibility: Semantic HTML, ARIA labels, keyboard nav
+
+Responsive: Mobile-first design, tested on all breakpoints
