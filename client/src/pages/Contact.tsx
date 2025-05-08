@@ -10,7 +10,7 @@ import { useToast } from "@/hooks/use-toast";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useParallax } from "@/hooks/use-parallax";
-import { contactSchema } from "@shared/schema";
+import { contactSchema } from "@/lib/schema";
 import { Mail, Phone, MapPin, Send, Loader2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
