@@ -47,6 +47,15 @@ app.use((req, res, next) => {
   try {
     const server = await registerRoutes(app);
 
+    // Fallback OPTIONS handler for any route (CORS preflight)
+    app.use((req, res, next) => {
+      if (req.method === "OPTIONS") {
+        res.sendStatus(204);
+      } else {
+        next();
+      }
+    });
+
     app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
       const status = err.status || err.statusCode || 500;
       const message = err.message || "Internal Server Error";
