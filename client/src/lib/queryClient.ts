@@ -12,9 +12,10 @@ export async function apiRequest(
   url: string,
   data?: unknown | undefined,
 ): Promise<Response> {
-  // Use Render backend URL for API requests
+  // Always use the Render backend for API requests
   const baseUrl = "https://portfolio-uerb.onrender.com";
-  const fullUrl = url.startsWith("http") ? url : baseUrl + url;
+  // Remove any leading slash from url to avoid double slashes
+  const fullUrl = url.startsWith("http") ? url : baseUrl + (url.startsWith("/") ? url : "/" + url);
   const res = await fetch(fullUrl, {
     method,
     headers: data ? { "Content-Type": "application/json" } : {},
