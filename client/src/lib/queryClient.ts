@@ -12,8 +12,8 @@ export async function apiRequest(
   url: string,
   data?: unknown | undefined,
 ): Promise<Response> {
-  // Prepend Vercel backend URL if url is relative
-  const baseUrl = "https://portfolio-six-hazel-87.vercel.app";
+  // Use Render backend URL for API requests
+  const baseUrl = "https://portfolio-uerb.onrender.com";
   const fullUrl = url.startsWith("http") ? url : baseUrl + url;
   const res = await fetch(fullUrl, {
     method,
