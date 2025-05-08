@@ -9,7 +9,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors({
   origin: "https://ruturajsolanki.netlify.app",
   methods: ["GET", "POST", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"]
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
 }));
 app.options("*", cors());
 
