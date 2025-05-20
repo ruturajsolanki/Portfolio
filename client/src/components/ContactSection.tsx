@@ -292,7 +292,7 @@ export default function ContactSection() {
                         <FaGithub />
                       </a>
                       <a 
-                        href="https://www.linkedin.com/in/ruturaj-solanki-40959411a" 
+                        href="https://www.linkedin.com/in/ruturaj-solanki-40959411a/" 
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-8 h-8 rounded-full bg-muted dark:bg-background flex items-center justify-center transition-transform hover:scale-110" 

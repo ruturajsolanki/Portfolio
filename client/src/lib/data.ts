@@ -87,7 +87,7 @@ export const projects: Project[] = [
       "Blog section with markdown support",
       "Dark/light mode toggle"
     ],
-    repo: "https://github.com",
+    repo: "https://github.com/ruturajsolanki/portfolio-website-template",
     demo: "https://example.com"
   },
   {
@@ -103,7 +103,7 @@ export const projects: Project[] = [
       "Integration with health platforms",
       "Social sharing and challenges"
     ],
-    repo: "https://github.com",
+    repo: "https://github.com/ruturajsolanki",
     demo: "https://example.com"
   }
 ];
